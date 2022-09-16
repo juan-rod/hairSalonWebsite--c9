@@ -1,0 +1,58 @@
+/* *********WIREFRAME ******* */
+
+.main-container {
+  border: 2px solid green;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 150px;
+  background-color: firebrick;
+  position: relative;
+}
+main {
+  flex: 1;
+  background-color: wheat;
+}
+main section {
+  background-color: brown;
+}
+footer {
+  height: 180px;
+  background-color: plum;
+}
+
+header nav ul {
+  border: 1px solid black
+}
+header div.hamburger{
+  height: 50px;
+  width: 50px;
+  background-color: aquamarine;
+  display: none;
+}
+nav.hamburger-nav {
+  background: white;
+  position: absolute;
+  width: 400px;
+  bottom: -100px;
+  left: calc(50% - 200px);
+  display:none;
+
+}
+
+@media (max-width: 576px) {
+  header nav {
+    display: none;
+  }
+
+  header div.hamburger{
+    display: flex;
+  }
+  nav.hamburger-nav {
+    display:flex;
+  }
+}
+
+
